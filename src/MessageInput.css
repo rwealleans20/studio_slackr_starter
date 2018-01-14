@@ -1,0 +1,8 @@
+.MessageInput {
+  display: flex;
+}
+
+.MessageInput-input {
+  flex: 1;
+  margin-right: 10px;
+}
