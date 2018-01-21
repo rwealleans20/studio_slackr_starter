@@ -25,6 +25,35 @@ Here's a demo of a minimal completed project:
 
 ![completed demo](completed.gif)
 
+# Expected Message Format
+
+A message must include the following keys (properties) and values:
+
+  - `author`: the string display name of the message author
+  - `contents`: the string post
+  - `timestamp`: a number representing the time of the post (use `Date.now()`)
+
+
+If they do not include these properties or if you use the wrong type (e.g.
+number versus string), writing to the database will return an error.
+
+A message can include the following optional value. If you update your code to
+handle these properties, you can do things cool like adding image support!
+
+  - `image_source`: the string of an image URL (must be a valid URL, e.g.
+    "http://i.imgur.com/AxV8w.jpg")
+  - `is_encrypted`: a boolean (true or false) indicating whether the post is
+    encrypted
+
+# Expected Channel Format
+
+A channel must include the following keys (properties) and values:
+
+  - `name`: the string display name of the channel
+
+If they do not include these properties or if you use the wrong type (e.g.
+number versus string), writing to the database will return an error.
+
 # References
 
 Here are the relevant documentation resources for this project. Please
