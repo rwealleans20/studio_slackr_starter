@@ -21,7 +21,7 @@ export default class Channel extends React.Component {
         sorted.push({key: m, val: this.props.channel.messages[m]});
       }
       sorted.sort(function(a, b) {
-        return a.val.timestamp > b.val.timestamp;
+        return a.val.timestamp - b.val.timestamp;
       });
       for(var i = 0; i < sorted.length; i++) {
         messages.push(<Message key={sorted[i].key} value={sorted[i].val}/>);
