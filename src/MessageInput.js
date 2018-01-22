@@ -19,7 +19,7 @@ export default class MessageInput extends React.Component {
     });
   }
   sendMessage(event) {
-    var self = this;
+    // var self = this; // This will be needed later.
     event.preventDefault();
     if(!this.state.message) {
       return;
